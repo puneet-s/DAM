@@ -1,4 +1,4 @@
-rm(list=ls())   
+
 text.clean = function(text,user_stop_words)                    # text data
 { require("tidytext")
   require('tibble')
