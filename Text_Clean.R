@@ -19,6 +19,6 @@ text.clean = function(text, user_stop_words)                    # text data
   x  =  removeWords(x,stopwords)            # removing stopwords created above
   x  =  stripWhitespace(x)                  # removing white space
   #  x  =  stemDocument(x)                   # can stem doc if needed.
-  
+  x = x[(x != "")] 
   return(x)
 }
