@@ -11,7 +11,7 @@ distill.cog = function(adj_matrix, # input TCM ADJ MAT
   a = colSums(mat1) # collect colsums into a vector obj a
   b = order(-a)     # nice syntax for ordering vector in decr order  
   s = central_nodes
-  k = max_connections
+  k1 = max_connections
   mat2 = mat1[b, b]     # order both rows and columns along vector b
   
   diag(mat2) =  0
