@@ -23,7 +23,7 @@ Build_dtm_dtmidf = function (clean.text)
     cast_dtm(line, word, n)
   
   dtm_idf <- text_words_idf %>%
-    cast_dtm(word, line, n)
+    cast_dtm(line, word, tf_idf)
   
   out = list (dtm, dtm_idf)
   return (out)
