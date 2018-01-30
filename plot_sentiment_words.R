@@ -1,7 +1,7 @@
 ########## Plot words that contribute sentiment #############
 ### input text as list of strings###############
 ### output: Display plot of words########################
-sentiment_count_bing = function (list_of_strings)
+sentiment_plot_bing = function (list_of_strings)
 {
   try(require(tidytext) || install.packages("tidytext"))
   try(require(tidyr)    || install.packages("tidyr"))
