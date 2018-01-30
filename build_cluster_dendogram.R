@@ -1,4 +1,4 @@
-function(data_frame)
+display_dendogram = function(data_frame)
 {
   mydata = data_frame
   d <- dist(mydata, method = "euclidean") # distance matrix
