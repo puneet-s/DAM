@@ -1,7 +1,7 @@
 ########## Finding sentiment of document using bing #############
 ### Input text as list of strings#####
 ### Output 4 col tibble: sentiment, index, n, method #########
-function (list_of_strings)
+sentiment_count_bing = function (list_of_strings)
 {
   try(require(tidytext) || install.packages("tidytext"))
   try(require(tidyr)    || install.packages("tidyr"))
