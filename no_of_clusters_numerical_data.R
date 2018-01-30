@@ -1,4 +1,4 @@
-function(data_frame)
+cluster_graph = function(data_frame)
 {
   
   mydata=data_frame
