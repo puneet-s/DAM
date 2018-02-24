@@ -2,7 +2,7 @@
 # Adjecency Matrix from DTM                                 #
 #-----------------------------------------------------------#
 
-DTM_2_AdjMatrix = function(dtm)
+DTM_2_AdjMatrix_small_dtm = function(dtm)
 {
   dtm1 = as.matrix(dtm)   # need it as a regular matrix for matrix ops like %*% to apply
   adj.mat = t(dtm1) %*% dtm1    # making a square symmatric term-term matrix 
