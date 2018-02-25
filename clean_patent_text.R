@@ -1,4 +1,6 @@
 clean_patent_text = function(text_column){
+  require(stringr)
+  require(dplyr)
   text_in_func <- text_column  %>% data_frame() %>% rename(text=".")%>%
     mutate(text = str_replace_all(text, "include", " "),
            text = str_replace_all(text, "[Mm]ethod", " "),
